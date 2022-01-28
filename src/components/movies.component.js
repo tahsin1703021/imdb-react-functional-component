@@ -91,8 +91,8 @@ const Movies = () => {
   }
   
     const filteredMovies = filterMovies();
-    const paginatedMovies = paginatedMovies(filteredMovies);
-    const movies = sortMovies(paginatedMovies);
+    const paginatedMovie = paginatedMovies(filteredMovies);
+    const movies = sortMovies(paginatedMovie);
     const columns = [
       {
         label: "Rank",

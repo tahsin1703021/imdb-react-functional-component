@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 const Rating = () => {
     const [isHovered , setIsHovered] = useState(false);
 
-    handleHover =()=>{
+    const handleHover =()=>{
         setIsHovered(true);
     }
-    handleHoverOut =()=>{
+    const handleHoverOut =()=>{
         setIsHovered(false);
     }
 
     getClassName = () =>{
         const { isRated } = props;
-        const { isHovered } = isHovered;
+        const { isHovered } = props;
         let className = isRated ? "bi bi-star-fill" : "bi bi-star";
         className += isHovered ? " text-primary" : "";
         return className; 
